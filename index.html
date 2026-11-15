@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tool Finder</title>
+  <meta name="description" content="Find the best free AI tools for content creation, coding, music, and more. Search by keyword and discover powerful tools.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Search View -->
+    <div class="view active" id="searchView">
+      <div class="search-card card">
+        <h1>AI Tool Finder</h1>
+        <div class="search-box">
+          <div class="input-wrapper">
+            <input type="text" id="searchInput" placeholder="Enter a keyword for AI tools..." />
+            <button class="clear-btn" id="clearBtn">×</button>
+          </div>
+          <button class="search-btn" id="searchBtn">Search</button>
+        </div>
+      </div>
+
+      <div class="tools-card card">
+        <h2>Free AI Tools</h2>
+        <div id="toolsGrid" class="directory-grid"></div>
+      </div>
+    </div>
+
+    <!-- Results View -->
+    <div class="view" id="resultsView">
+      <div class="card">
+        <h2>Search Results</h2>
+        <div id="resultsGrid" class="directory-grid"></div>
+      </div>
+      <button class="back-btn" id="backBtnResults">← Back</button>
+    </div>
+
+    <!-- Detail View -->
+    <div class="view" id="detailView">
+      <div class="tool-detail card">
+        <div class="tool-header">
+          <img id="toolIcon" class="tool-icon-large" src="" alt="Tool icon" />
+          <h2 id="toolName"></h2>
+        </div>
+        <div class="tool-body">
+          <p id="toolDescription"></p>
+          <p id="toolKeywords" class="keywords"></p>
+          <a id="toolLink" href="#" target="_blank" class="visit-btn">Visit site</a>
+        </div>
+      </div>
+      <button class="back-btn" id="backBtnDetail">← Back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
